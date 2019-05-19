@@ -1,10 +1,15 @@
 const VuidoTemplateCompiler = require('vuido-template-compiler');
 const webpack = require('webpack');
 
-module.exports = (api) => {
+module.exports = (api, options) => {
   const vueConfig = api;
+  const vueOptions = options;
+
+  vueOptions.filenameHashing = false;
 
   vueConfig.chainWebpack((webpackConfig) => {
+    webpackConfig.optimization.delete('splitChunks');
+
     webpackConfig.module
       .rule('vue')
       .use('vue-loader')
