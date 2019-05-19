@@ -6,8 +6,10 @@ module.exports = (api) => {
   const fileLines = fileContents.split(/\r?\n/g);
 
   const lineIndex = fileLines.findIndex(line => line.match(/\$mount/));
-  const line = fileLines[lineIndex];
 
+  if (lineIndex < 0) return;
+
+  const line = fileLines[lineIndex];
   fileLines[lineIndex] = line.replace(/\$mount.*\)/, '$start()');
 
   fs.writeFileSync(api.entryFile, fileLines.join(EOL), { encoding: 'utf-8' });

@@ -6,8 +6,10 @@ module.exports = (api) => {
   const fileLines = fileContents.split(/\r?\n/g);
 
   const lineIndex = fileLines.findIndex(line => line.match(/import Vue from/));
-  const line = fileLines[lineIndex];
 
+  if (lineIndex < 0) return;
+
+  const line = fileLines[lineIndex];
   fileLines[lineIndex] = line.replace(/vue/, 'vuido');
 
   fs.writeFileSync(api.entryFile, fileLines.join(EOL), { encoding: 'utf-8' });
