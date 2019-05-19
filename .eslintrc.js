@@ -4,7 +4,8 @@ module.exports = {
     node: true,
   },
   extends: [
-    'airbnb',
+    'plugin:vue/recommended',
+    '@vue/airbnb',
   ],
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
