@@ -20,7 +20,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "lint": "eslint . --ext .js --ignore-pattern !.*"
+    "lint": "eslint . --ext .js --ignore-pattern !.* --ignore-pattern /node_modules/.*"
   },
   "husky": {
     "hooks": {
