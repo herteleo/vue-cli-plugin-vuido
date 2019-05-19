@@ -13,3 +13,8 @@ vue add @herteleo/vuido
 
 ## Usage
 tbd
+
+
+## Updating
+
+After updating the plugin you should run `vue invoke @herteleo/vuido` to receive the latest changes.
