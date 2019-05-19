@@ -1,0 +1,41 @@
+{
+  "name": "@herteleo/vue-cli-plugin-vuido",
+  "version": "0.0.0-development",
+  "description": "vue-cli plugin to add vuido specific setup",
+  "keywords": [
+    "vue",
+    "cli",
+    "vue-cli-plugin",
+    "vuido"
+  ],
+  "author": "Leonard Hertel <leonard.hertel@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/herteleo/vue-cli-plugin-vuido",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/herteleo/vue-cli-plugin-vuido.git"
+  },
+  "bugs": {
+    "url": "https://github.com/herteleo/vue-cli-plugin-vuido/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --ext .js --ignore-pattern !.*"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^7.6.1",
+    "@commitlint/config-conventional": "^7.6.0",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0",
+    "husky": "^2.3.0"
+  }
+}
