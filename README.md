@@ -8,6 +8,26 @@ A Vue CLI 3 plugin to create [Vuido](https://github.com/mimecorg/vuido) projects
 With Vuido you can create native desktop applications for Windows, OS X and Linux using [Vue](https://vuejs.org/). To get started with Vuido, you should read the [Vuido introduction](https://vuido.mimec.org/introduction).
 
 
+## Prerequisites
+
+Depending on the operating system you are working with, you need to execute one of the following commands before we get started. [Read more](https://vuido.mimec.org/installation#prerequisites)
+
+
+#### OS X
+```
+xcode-select --install
+```
+
+#### Windows
+```
+npm install --global --production windows-build-tools
+```
+
+#### Linux
+```
+sudo apt install build-essential libgtk-3-dev
+```
+
 ## Installation
 
 Open a terminal in the directory of your [Vue CLI 3 project](https://cli.vuejs.org/guide/creating-a-project.html). To add Vuido to your project, simply run:
