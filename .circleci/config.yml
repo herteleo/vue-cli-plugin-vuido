@@ -10,10 +10,6 @@ jobs:
   release:
     docker:
       - image: circleci/node:12
-    branches:
-      only:
-        - master
-        - dev
     steps:
       - checkout
       - run: npm ci
@@ -27,3 +23,8 @@ workflows:
       - release:
           requires:
             - lint
+          filters:
+            branches:
+              only:
+                - master
+                - dev
