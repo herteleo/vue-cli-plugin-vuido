@@ -1,5 +1,6 @@
 const VuidoTemplateCompiler = require('vuido-template-compiler');
 const webpack = require('webpack');
+const buildCommand = require('./commands/build');
 const serveCommand = require('./commands/serve');
 
 module.exports = (api, options) => {
@@ -9,6 +10,7 @@ module.exports = (api, options) => {
   vueOptions.filenameHashing = false;
 
   vueConfig.chainWebpack((webpackConfig) => {
+    webpackConfig.output.filename('app.js');
     webpackConfig.optimization.delete('splitChunks');
 
     webpackConfig.module
@@ -34,4 +36,5 @@ module.exports = (api, options) => {
   }));
 
   serveCommand(api, options);
+  buildCommand(api, options);
 };

@@ -39,6 +39,8 @@
     "husky": "^2.3.0"
   },
   "dependencies": {
+    "cosmiconfig": "^5.2.1",
+    "launchui-packager": "^0.1.1",
     "nodemon": "^1.19.0",
     "vuido-template-compiler": "^0.2.0",
     "webpack": "^4.31.0"
