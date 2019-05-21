@@ -1,3 +1,10 @@
+## [0.1.1](https://github.com/herteleo/vue-cli-plugin-vuido/compare/0.1.0...0.1.1) (2019-05-21)
+
+
+### Bug Fixes
+
+* added prerequisites documentation ([ed2ed56](https://github.com/herteleo/vue-cli-plugin-vuido/commit/ed2ed56))
+
 # [0.1.0](https://github.com/herteleo/vue-cli-plugin-vuido/compare/0.0.0...0.1.0) (2019-05-21)
 
 
