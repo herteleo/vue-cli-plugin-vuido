@@ -1,6 +1,6 @@
 {
   "name": "@herteleo/vue-cli-plugin-vuido",
-  "version": "0.0.0-development",
+  "version": "0.1.0",
   "description": "vue-cli plugin to add vuido specific setup",
   "keywords": [
     "vue",
