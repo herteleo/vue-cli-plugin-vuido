@@ -1,5 +1,6 @@
 const VuidoTemplateCompiler = require('vuido-template-compiler');
 const webpack = require('webpack');
+const serveCommand = require('./commands/serve');
 
 module.exports = (api, options) => {
   const vueConfig = api;
@@ -31,4 +32,6 @@ module.exports = (api, options) => {
       ),
     ],
   }));
+
+  serveCommand(api, options);
 };
